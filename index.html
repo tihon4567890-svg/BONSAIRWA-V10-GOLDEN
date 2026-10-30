@@ -24,58 +24,164 @@
 </style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BONSAIRWA V10 GOLDEN - 128 RWA Mai Vang Cho Lach</title>
+<title>NucleusNexus OS v5.2 Gold - AI Healer - V10 GOLDEN</title>
 <style>
-body{font-family:system-ui,sans-serif;background:#0a0a0a;color:#f5f5dc;padding:20px;max-width:900px;margin:auto}
-h1{color:#d4af37;font-size:32px}h2{color:#22c55e;margin-top:30px}
-.card{background:#1a1a1a;border:1px solid #d4af37;padding:15px;border-radius:12px;margin:10px 0}
-.badge{display:inline-block;background:#d4af37;color:#000;padding:4px 8px;border-radius:6px;font-size:12px;margin:2px}
-.badge-green{background:#22c55e}
+  body{font-family:system-ui,sans-serif;background:#0f0f0f;color:#fff;padding:16px;max-width:800px;margin:0 auto}
+  .gold{border:2px solid gold;border-radius:12px;padding:16px;margin:12px 0;background:#1a1a0a}
+  .settings{background:#222;border-radius:10px;padding:16px;margin:16px 0}
+  input,select,textarea{width:100%;padding:10px;margin:6px 0;border-radius:8px;border:1px solid #555;background:#333;color:#fff;box-sizing:border-box}
+  button{padding:12px 20px;border-radius:8px;border:none;background:gold;color:#000;font-weight:bold;cursor:pointer;margin:6px}
+  button:hover{background:#ffdf00}
+  .msg{padding:10px;border-radius:8px;margin:8px 0}
+  .user{background:#2a4d8f} .ai{background:#1e3d2e} .offline{background:#4d2a2a;color:#ffcc00}
+  #chat{height:400px;overflow-y:auto;border:1px solid #333;border-radius:10px;padding:10px;background:#111}
+  .ok{color:#00ff88;font-weight:bold}
+  h1{color:gold;text-align:center}
+  h2{color:#7fff7f}
+  .logo{font-size:24px;text-align:center;margin:10px}
 </style>
 </head>
 <body>
-<h1>BONSAIRWA V10 GOLDEN</h1>
-<p><b>128 RWA mai vang Cho Lach Ben Tre - Cay me BONSAIRWA-000 hoanh 90 cao 3m 500TR - NucleusNexus V5</b></p>
-<div class="card">
-<b>Founder:</b> Nguyen Thanh Thai - Cau Cai Ga Long Thoi Cho Lach Ben Tre - Vietnam flower capital Cai Mon<br>
-<b>GitHub:</b> tihon4567890-svg / tihon5678900-lab<br>
-<b>Devpost:</b> 7 hackathons 6 projects 4 achievements 3 followers<br>
-<b>Contact:</b> tihon5678900@gmail.com | TikTok @thanhthainguyen25
+<h1>🌱 BONSAIRWA V10 GOLDEN</h1>
+<div class="logo">Vàng - Tím - Xanh da trời - Xanh mạ non - Trắng - Hồng lợt<br>Độc bản CEO Thanh Thai Nguyen - Chợ Lách</div>
+
+<div class="gold">
+<h2>🧬 NucleusNexus OS v5.2 Gold - 4.2 năm → 14 ngày</h2>
+<p><b>North Star:</b> Personal Twin 2030, can thiệp tại Sparsha trước khi thành Thọ.</p>
+<p><b>5 Lớp + Time:</b> Observed → DeepNull → MREGLE → CRISPR-GPT → Insight</p>
+<p><b>SEAL:</b> 0327122139 - Chợ Lách Bến Tre - Human OS where YOU are IoT</p>
 </div>
-<h2>NucleusNexus OS v5.2 Gold - 5 AI Agents</h2>
-<div class="card">
-1. <span class="badge">EmpathaVision AI 432Hz 94% sync</span> - Nhin la benh<br>
-2. <span class="badge badge-green">DevOps Di Dong ARM64</span> - Tu sua loi bien dich Android<br>
-3. <span class="badge">IoT ESP32-V10.2</span> - O-001 64.7% O-002 40.9% O-003 21.5% kho tank 86% RSSI 92% Cho Lach_5G -48dBm<br>
-4. <span class="badge">RWA Vault Polygon</span> - Blocks 95777687/96313059 - 128 NFT<br>
-5. <span class="badge badge-green">MindfulFlow 386Hz</span> - Onboarding 3s Thay -> Nghe 386Hz -> Trai Nghiem
+
+<div class="settings">
+<h2>⚙️ NEBIUS TOKEN FACTORY SETTINGS</h2>
+<p style="color:#ffcc00">Dán Nebius key để bật AI online - offline vẫn dùng được tự lành</p>
+<label>ENDPOINT</label>
+<input id="endpoint" value="https://api.tokenfactory.nebius.com/v1/chat/completions">
+<label>NEBIUS API KEY (sk-...)</label>
+<div style="display:flex;gap:6px">
+<input id="apiKey" type="password" placeholder="sk-...">
+<button onclick="toggleKey()">👁️</button>
+<button onclick="saveKey()">🐢 Lưu</button>
 </div>
-<h2>Tech Stack - Nebius x NVIDIA</h2>
-<div class="card">
-- <b>Nebius Token Factory:</b> google/gemma-3-27b-it API v1... 236 chars - Builder tihon4567<br>
-- <b>NVIDIA Nemotron:</b> Mini 8B + 4 340B - RAG + DevOps<br>
-- <b>Tavily:</b> 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 - search + to-rag crawl<br>
-- <b>Polygon:</b> RWA 0.5 MATIC / 50 MATIC - OKX Proof 110% BTC 100% ETH 105% USDT<br>
-- <b>Streamlit:</b> bonsai-cho-lach-127.streamlit.app<br>
-- <b>Adsterra:</b> 31942875 Native Banner, 31942876 Social Bar bicea.org/14/5eb37ef..., 31942877 Smartlink<br>
-- <b>Retool The Mallet:</b> Centralized Agent Management - Moi nhan vien 1 agent trong Slack/Teams - Giong moi cay mai 1 agent
+<div id="status"></div>
+<label>MODEL</label>
+<select id="model">
+<option value="google/gemma-3-27b">google/gemma-3-27b (Free - Đang dùng)</option>
+<option value="meta-llama/Meta-Llama-3.1-70B-Instruct">meta-llama/Meta-Llama-3.1-70B-Instruct</option>
+<option value="nvidia/Llama-3.1-Nemotron-70B-Instruct">nvidia/Llama-3.1-Nemotron-70B-Instruct - Thi Nebius x NVIDIA</option>
+<option value="microsoft/Phi-3-mini-4k-instruct">microsoft/Phi-3-mini-4k-instruct</option>
+</select>
 </div>
-<h2>Phuong phap AI Cong Sinh</h2>
-<div class="card">Nguoi gieo duyen - AI gieo hat - Vuon no binh an. Onboarding 3 giay: Thay -> Nghe 386Hz -> Trai Nghiem Noi la AI lam -> Ung Dung. 16h/ngay tuoi 128 cay - 70% cong viec thu cong truoc day.</div>
-<h2>Hackathons 2026</h2>
-<div class="card">
-- Nebius x NVIDIA Global AI Hackathon $50k - Submitted 30/10/2026 8:51 AM 10:47 AM - 15h left to edit<br>
-- Qloo Agentic $25k - Due 31/10 11:45 PM ET<br>
-- PayPal AI $67.5k - Due Nov 12<br>
-- Meta VR Start $1M - Due Nov 18 - DDA + Teens 13+ signed 8:00 AM<br>
-- Gemini XPRIZE $2M + Agent Cinema $75k
+
+<div id="chat"></div>
+
+<div style="display:flex;gap:6px;margin-top:12px">
+<textarea id="userInput" placeholder="Bạn đang cảm thấy thế nào? Nhắn cho AI Healer..." rows="3"></textarea>
+<button onclick="send()" style="height:70px">Gửi 🚀</button>
 </div>
-<h2>Live Demos</h2>
-<div class="card">
-<a href="https://tihon4567890-svg.github.io/BONSAIRWA-V10-GOLDEN/">This Site</a> | 
-<a href="https://bonsai-cho-lach-127.streamlit.app">Streamlit IoT</a> | 
-<a href="https://github.com/tihon5678900-lab/BONSAIRWA-V10-GOLDEN">GitHub</a>
+
+<div class="gold">
+<h2>🌳 BONSAIRWA-000 | MAI XÙ MẸ - BÁU VẬT VƯỜN</h2>
+<p><b>HOÀNH 90 - CAO 3M - DÁNG TRỰC QUÂN TỬ - ĐẦU VOI ĐUÔI CHUỘT - XÙ CHẢY - 500 TRIỆU VND</b></p>
+<p>Polygon Block: <span id="block">95777687</span> + QuickNode: Rừng Mềm Nhanh - Free 10M credits</p>
+<p>127 cây mai vàng Chợ Lách RWA - QR IoT</p>
+<p>App: <a href="https://bonsairwa-cho-lach.streamlit.app" style="color:gold">bonsairwa-cho-lach.streamlit.app</a></p>
 </div>
-<p style="color:#888;font-size:12px">V10.15 FINAL 9691 chars live 9:04 AM 30/10/2026 - Tavily to-rag crawl ready - No evidence fixed - BONSAIRWA Research 2026</p>
+
+<script>
+let savedKey = localStorage.getItem('nebius_key') || '';
+let savedEndpoint = localStorage.getItem('nebius_endpoint') || 'https://api.tokenfactory.nebius.com/v1/chat/completions';
+let savedModel = localStorage.getItem('nebius_model') || 'google/gemma-3-27b';
+document.getElementById('apiKey').value = savedKey;
+document.getElementById('endpoint').value = savedEndpoint;
+document.getElementById('model').value = savedModel;
+updateStatus();
+
+function toggleKey(){
+  let i = document.getElementById('apiKey');
+  i.type = i.type==='password'?'text':'password';
+}
+function saveKey(){
+  localStorage.setItem('nebius_key', document.getElementById('apiKey').value.trim());
+  localStorage.setItem('nebius_endpoint', document.getElementById('endpoint').value.trim());
+  localStorage.setItem('nebius_model', document.getElementById('model').value);
+  updateStatus();
+  addMsg('Hệ thống','✅ Đã kết nối Nebius Token Factory thành công! Key đã lưu vào trình duyệt! Giờ chat sẽ online!','ok');
+}
+function updateStatus(){
+  let k = document.getElementById('apiKey').value || savedKey;
+  let s = document.getElementById('status');
+  if(k && k.startsWith('sk-')){
+    s.innerHTML = '<span class="ok">✅ Đã kết nối Nebius Token Factory thành công! Key •••••• đã lưu</span>';
+  } else {
+    s.innerHTML = '<span style="color:#ff6666">⚠️ Chưa có key - Đang ở chế độ offline - Dán sk-... vào để online</span>';
+  }
+}
+function addMsg(who,text,cls){
+  let c = document.getElementById('chat');
+  let d = document.createElement('div');
+  d.className = 'msg '+(cls|| (who==='Bạn'?'user':'ai'));
+  d.innerHTML = '<b>'+who+':</b> '+text;
+  c.appendChild(d);
+  c.scrollTop = c.scrollHeight;
+}
+
+async function send(){
+  let input = document.getElementById('userInput');
+  let txt = input.value.trim();
+  if(!txt) return;
+  addMsg('Bạn',txt,'user');
+  input.value='';
+  let key = localStorage.getItem('nebius_key') || document.getElementById('apiKey').value.trim();
+  let endpoint = localStorage.getItem('nebius_endpoint') || document.getElementById('endpoint').value.trim();
+  let model = localStorage.getItem('nebius_model') || document.getElementById('model').value;
+
+  if(!key || !key.startsWith('sk-')){
+    addMsg('NucleusNexus AI Healer','Bạn đang cảm thấy thế nào? Mình ở đây lắng nghe... Hãy hít thở sâu 4-7-8 nhé. Bạn đang an toàn tại Chợ Lách Bến Tre. 🌱 (đang ở chế độ offline, kiểm tra lại Nebius key - Dán sk-... vào ô trên và bấm 🐢)','offline');
+    return;
+  }
+  
+  addMsg('NucleusNexus AI Healer','Đang kết nối Nebius '+model+'...','ai');
+  
+  try{
+    // Nebius Token Factory format - OpenAI compatible
+    let resp = await fetch(endpoint, {
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'Authorization':'Bearer '+key
+      },
+      body: JSON.stringify({
+        model: model,
+        messages: [
+          {role:'system', content:'Bạn là NucleusNexus AI Healer OS v5.2 Gold, SEAL 0327122139, Chợ Lách Bến Tre, 5 lớp Observed-DeepNull-MREGLE-CRISPR-GPT-Insight, giúp người dùng tự lành, giọng ấm áp tiếng Việt, gắn với BONSAIRWA V10 GOLDEN lục sắc độc bản.'},
+          {role:'user', content: txt}
+        ],
+        max_tokens: 500,
+        temperature: 0.7
+      })
+    });
+    let data = await resp.json();
+    // Xóa tin nhắn "Đang kết nối..."
+    let chat = document.getElementById('chat');
+    chat.removeChild(chat.lastChild);
+    
+    if(data.choices && data.choices[0]){
+      addMsg('NucleusNexus AI Healer (Online '+model+')', data.choices[0].message.content, 'ai');
+    } else if(data.error){
+      addMsg('Lỗi', JSON.stringify(data.error), 'offline');
+    } else {
+      addMsg('AI', JSON.stringify(data).slice(0,500), 'ai');
+    }
+  }catch(e){
+    let chat = document.getElementById('chat');
+    if(chat.lastChild) chat.removeChild(chat.lastChild);
+    addMsg('Lỗi Offline','Không kết nối được Nebius: '+e.message+' (đang ở chế độ offline, kiểm tra lại Nebius key - Có thể CORS hoặc endpoint sai, thử endpoint https://api.studio.nebius.com/v1/chat/completions)','offline');
+  }
+}
+
+// Init message
+addMsg('NucleusNexus AI Healer','Chào ông Thái! Tôi là AI Healer V10 GOLDEN! Dán Nebius key sk-... vào ô trên, bấm 🐢, rồi chat với tôi nhé! 🌱 Vàng Tím Xanh da trời Xanh mạ non Trắng Hồng lợt - Độc bản!','ai');
+</script>
 <script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
 </html>
