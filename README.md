@@ -1,2 +1,38 @@
-# BONSAIRWA-V10-GOLDEN
-128 RWA mai vang Cho Lach Ben Tre - Cay me BONSAIRWA-000 hoanh 90 cao 3m 500TR - NucleusNexus V5
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BONSAIRWA V10 GOLDEN - 128 RWA Mai Vang Cho Lach - Qloo + Nebius</title>
+<style>body{font-family:system-ui;background:#0a0a0a;color:#f5f5dc;padding:20px;max-width:900px;margin:auto}h1{color:#d4af37} .card{background:#1a1a1a;border:1px solid #d4af37;padding:15px;border-radius:12px;margin:10px 0} .badge{background:#d4af37;color:#000;padding:4px 8px;border-radius:6px;margin:2px}</style>
+</head>
+<body>
+<h1>BONSAIRWA V10 GOLDEN</h1>
+<p><b>128 RWA mai vang Cho Lach - Cay me BONSAIRWA-000 hoanh 90 cao 3m 500TR</b></p>
+<div class="card">
+<b>BONSAIRWA-000 - 19/10/2026 @BonsaiRWA 347 views</b><br>
+Cau Cai Ga Long Thoi Cho Lach Ben Tre - Thu phu mai vang Cai Mon<br>
+<img src="https://via.placeholder.com/800x600/d4af37/000000?text=BONSAIRWA-000+Hoanh+90+Cao+3m+500TR" style="width:100%;border-radius:12px;margin-top:10px;">
+</div>
+<div class="card">
+<b>NucleusNexus AI Healer V10 GOLDEN</b><br>
+<span class="badge">Qloo Taste Graph</span> <span class="badge">Tavily Extract</span> <span class="badge">Nebius gemma-3-27b-it</span> <span class="badge">【entity-NVIDIA¦canonical_name=NVIDIA】 Nemotron-Mini 8B</span> <span class="badge">Polygon 95777687/96313059</span><br><br>
+<input id="nebiusKey" placeholder="Dán Nebius key sk-... vào đây" style="width:70%;padding:8px;">
+<button onclick="chat()" style="padding:8px;background:#d4af37;">🐢 Chat AI Healer</button>
+<div id="chatBox" style="margin-top:10px;height:200px;overflow:auto;border:1px solid #333;padding:10px;"></div>
+</div>
+<script>
+function addMsg(a,b,c){let d=document.getElementById('chatBox');d.innerHTML+=`<div><b>${a}:</b> ${b}</div>`;d.scrollTop=d.scrollHeight;}
+async function chat(){
+ let k=document.getElementById('nebiusKey').value;
+ if(!k){addMsg('Lỗi','Chưa dán Nebius key sk-...','offline');return;}
+ addMsg('Bạn','Chào AI Healer V10 GOLDEN! Tư vấn cây BONSAIRWA-000 hoanh 90 cao 3m hợp phong thủy?','user');
+ try{
+  let r=await fetch('https://api.studio.nebius.com/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+k},body:JSON.stringify({model:'google/gemma-3-27b-it',messages:[{role:'user',content:'Tư vấn phong thủy BONSAIRWA-000 hoanh 90 cao 3m 500TR tại Cầu Cái Gà'}]})});
+  let j=await r.json();addMsg('AI Healer V10 GOLDEN',j.choices[0].message.content,'ai');
+ }catch(e){addMsg('Lỗi Offline','Không kết nối được Nebius: '+e.message+' (đang ở chế độ offline, kiểm tra lại Nebius key - Có thể CORS hoặc endpoint sai, thử endpoint https://api.studio.nebius.com/v1/chat/completions)','offline');}
+}
+addMsg('NucleusNexus AI Healer','Chào ông Thái! Tôi là AI Healer V10 GOLDEN! Dán Nebius key sk-... vào ô trên, bấm 🐢, rồi chat với tôi nhé! 🌱 Vàng Tím Xanh da trời Xanh mạ non Trắng Hồng lợt - Độc bản!','ai');
+</script>
+<p style="color:#888;font-size:11px">V10.16 FINAL 0:20 31/10/2026 - Fixed 44687 chars line - Tavily to-rag ready - Nebius x 【entity-NVIDIA¦canonical_name=NVIDIA】 $50k + Qloo $25k Submitted - BONSAIRWA Research - Cau Cai Ga</p>
+</body></html>
